@@ -2,12 +2,13 @@
 # x가 5/3/2로 나누어 떨어지면, 5/3/2로 나눈다. 그렇지 않으면 x에서 1을 뺀다.
 
 
-x = int(input())
+n = int(input())
 
-dp = [0] * (x + 1)
+dp = [0] * (n + 1)
+
 
 # Bottom-Up 풀이법
-for i in range(2, x + 1):
+for i in range(2, n + 1):
     # 현재의 수에서 1을 빼는 경우
     dp[i] = dp[i - 1] + 1
 
@@ -23,4 +24,4 @@ for i in range(2, x + 1):
     if i % 5 == 0:
         dp[i] = min(dp[i], dp[i // 5] + 1)
 
-print(dp[x])
+print(dp[n])
