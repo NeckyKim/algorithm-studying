@@ -1,4 +1,4 @@
-# 8-1-9. 금광
+# 8-2-1. 금광
 
 
 for tc in range(0, int(input())):
@@ -7,7 +7,7 @@ for tc in range(0, int(input())):
     golds = list(map(int, input().split()))
 
 
-    # 2차원 다이내믹 프로그래밍 테이블 초기화
+    # 다이내믹 프로그래밍 테이블 초기화
     dp = []
 
     for i in range(0, m):
