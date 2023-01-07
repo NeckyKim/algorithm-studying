@@ -1,4 +1,4 @@
-# 8-2-1. 금광
+# Q31. 금광
 
 
 for tc in range(0, int(input())):
