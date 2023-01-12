@@ -1,5 +1,5 @@
 # Q10. 자물쇠와 열쇠
-# 프로그래머스: https://school.programmers.co.kr/learn/courses/30/lessons/60059
+# [프로그래머스] https://school.programmers.co.kr/learn/courses/30/lessons/60059
 
 
 # 키를 회전

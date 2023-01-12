@@ -1,4 +1,5 @@
 # Q07. 럭키 스트레이트
+# [백준] www.acmicpc.net/problem/18406
 
 
 numbers = [int(i) for i in list(input())]
