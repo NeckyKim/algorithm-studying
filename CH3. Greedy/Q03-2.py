@@ -1,4 +1,5 @@
-# Q03-2. 문자열 뒤집기
+# Q03. 문자열 뒤집기
+# [백준] https://www.acmicpc.net/problem/1439
 
 
 numbers = [int(i) for i in list(input())]
