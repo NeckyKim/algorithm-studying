@@ -1,4 +1,4 @@
-# 5-1-9: BFS(Breadth-First Search, 너비 우선 탐색)
+# 5-9: BFS(Breadth-First Search, 너비 우선 탐색)
 # graph: 그래프 정보
 # start: 시작 노드
 # visited: 방문한 노드

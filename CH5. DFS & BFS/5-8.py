@@ -1,4 +1,4 @@
-# 5-1-8. DFS(Depth-First Search, 깊이 우선 탐색)
+# 5-8. DFS(Depth-First Search, 깊이 우선 탐색)
 # graph: 그래프 정보
 # start: 시작 노드
 # visited: 방문한 노드
