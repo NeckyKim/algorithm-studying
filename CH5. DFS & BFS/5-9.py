@@ -1,13 +1,17 @@
 # 5-9: BFS(Breadth-First Search, 너비 우선 탐색)
+
+
+from collections import deque
+
 # graph: 그래프 정보
 # start: 시작 노드
 # visited: 방문한 노드
 
-
 def BFS(graph, start, visited):
 
     # 큐를 사용
-    queue = [start]
+    queue = deque()
+    queue.append(start)
 
     # 현재 노드를 방문 처리
     visited[start] = True
@@ -16,7 +20,7 @@ def BFS(graph, start, visited):
     while queue:
 
         # 큐에서 하나의 원소를 뽑아 출력
-        x = queue.pop(0)
+        x = queue.popleft()
         print(x, end=" ")
 
         # 아직 방문하지 않은 인접한 노드를 큐에 삽입
@@ -28,8 +32,8 @@ def BFS(graph, start, visited):
 
 graph = [
     [],
-    [2, 3, 8],  # 1번 노드는 2, 3, 8번 노드와 연결
-    [1, 7],
+    [2, 3, 8],  # 1번 노드는 2, 3, 8번 노드와 연결 됨
+    [1, 7],     # 2번 노드는 7번 노드와 연결 됨
     [1, 4, 5],
     [3, 5],
     [3, 4],

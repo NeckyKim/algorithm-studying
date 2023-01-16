@@ -1,8 +1,9 @@
 # 5-8. DFS(Depth-First Search, 깊이 우선 탐색)
+
+
 # graph: 그래프 정보
 # start: 시작 노드
 # visited: 방문한 노드
-
 
 def DFS(graph, start, visited):
 
@@ -23,8 +24,8 @@ def DFS(graph, start, visited):
 
 graph = [
     [],
-    [2, 3, 8],  # 1번 노드는 2, 3, 8번 노드와 연결
-    [1, 7],
+    [2, 3, 8],  # 1번 노드는 2, 3, 8번 노드와 연결 됨
+    [1, 7],     # 2번 노드는 7번 노드와 연결 됨
     [1, 4, 5],
     [3, 5],
     [3, 4],
