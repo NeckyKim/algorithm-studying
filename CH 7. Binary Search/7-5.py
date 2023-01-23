@@ -1,6 +1,7 @@
 # 7-5. 부품 찾기(이진 탐색)
 
 
+# 이진 탐색 코드
 def binarySearch(array, target, start, end):
     while start <= end:
         mid = (start + end) // 2
