@@ -10,9 +10,6 @@ for i in range(0, n):
 
 
 def DFS(x, y):
-    global n, m
-    global graph
-
     # 주어진 범위를 벗어나면 즉시 종료
     if not (0 <= x < n and 0 <= y < m):
         return False
