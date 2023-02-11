@@ -8,7 +8,7 @@ from collections import deque
 graph = [
     [],
     [2, 3, 8],  # 1번 노드는 2, 3, 8번 노드와 연결 됨
-    [1, 7],     # 2번 노드는 7번 노드와 연결 됨
+    [1, 7],     # 2번 노드는 1, 7번 노드와 연결 됨
     [1, 4, 5],
     [3, 5],
     [3, 4],
@@ -28,7 +28,8 @@ visited = [False] * 9
 def BFS(start):
 
     # 큐를 사용
-    queue = deque([start])
+    queue = deque()
+    queue.append(start)
 
     # 현재 노드를 방문 처리
     visited[start] = True
