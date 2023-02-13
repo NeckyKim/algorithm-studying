@@ -21,15 +21,14 @@ graph = [
 start = 1
 
 # 방문한 노드 초기화
-visited = [False] * 9
+visited = [False] * len(graph)
 
 
 # 너비 우선 탐색 알고리즘
 def BFS(start):
 
     # 큐를 사용
-    queue = deque()
-    queue.append(start)
+    queue = deque([start])
 
     # 현재 노드를 방문 처리
     visited[start] = True
@@ -39,7 +38,7 @@ def BFS(start):
 
         # 큐에서 하나의 원소를 뽑아 출력
         x = queue.popleft()
-        print(x, end=" ")
+        print(x)
 
         # 아직 방문하지 않은 인접한 노드를 큐에 삽입
         for i in graph[x]:

@@ -1,19 +1,14 @@
 # 4-1. 상하좌우
 
 
-n = int(input())
-
-moves = input().split()
-
-
-def solution(moves, n):
+def solution(n, moves):
     x, y = 1, 1
 
     # L(eft), R(ight), U(p), D(own)
     directions = ["L", "R", "U", "D"]
 
-    dx = [0, 0, -1, 1]  # x축 좌우 이동
-    dy = [-1, 1, 0, 0]  # y축 상하 이동
+    dx = [0, 0, -1, 1]
+    dy = [-1, 1, 0, 0]
 
     for move in moves:
 
@@ -29,8 +24,7 @@ def solution(moves, n):
                     x = nx
                     y = ny
 
-
     print(x, y)
 
 
-solution(moves, n)
+solution(int(input()), input().split())

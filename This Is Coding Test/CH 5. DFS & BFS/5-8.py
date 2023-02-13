@@ -18,7 +18,7 @@ graph = [
 start = 1
 
 # 방문한 노드 초기화
-visited = [False] * 9
+visited = [False] * len(graph)
 
 
 # 깊이 우선 탐색 알고리즘
@@ -27,7 +27,7 @@ def DFS(start):
     # 현재 노드를 방문 처리
     visited[start] = True
 
-    print(start, end=" ")
+    print(start)
 
     # 현재 노드와 인접한 노드를 재귀적으로 방문
     for i in graph[start]:
