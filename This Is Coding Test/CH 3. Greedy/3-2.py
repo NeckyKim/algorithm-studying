@@ -1,11 +1,6 @@
 # 3-2. 큰 수의 법칙
 
 
-n, m, k = map(int, input().split())
-
-numbers = list(map(int, input().split()))
-
-
 def solution(numbers, m, k):
     numbers.sort()
 
@@ -25,5 +20,9 @@ def solution(numbers, m, k):
 
     return answer
 
+
+n, m, k = map(int, input().split())
+
+numbers = list(map(int, input().split()))
 
 print(solution(numbers, m, k))

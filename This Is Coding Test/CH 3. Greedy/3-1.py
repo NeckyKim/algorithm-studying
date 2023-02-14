@@ -1,9 +1,6 @@
 # 3-1. 거스름돈
 
 
-price = int(input())
-
-
 def solution(price):
     count = 0
 
@@ -18,4 +15,4 @@ def solution(price):
     return count
 
 
-print(solution(price))
+print(solution(int(input())))
