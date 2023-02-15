@@ -30,7 +30,7 @@ function BFS(start) {
     visited[start] = true;
 
     // 큐가 빌 때 까지 반복
-    while (queue.length !== 0) {
+    while (queue.length > 0) {
 
         // 큐에서 하나의 원소를 뽑아 출력
         x = queue.shift();

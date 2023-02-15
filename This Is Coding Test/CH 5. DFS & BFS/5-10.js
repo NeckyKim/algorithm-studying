@@ -1,5 +1,6 @@
 // 5-10. 음료수 얼려 먹기
 
+
 function solution(n, m, graph) {
     // 문자열을 2차원 배열로 변환
     graph = graph.split("\n").map((item) => item = item.split("").map(Number));
