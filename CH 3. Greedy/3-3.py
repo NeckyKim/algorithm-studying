@@ -12,8 +12,6 @@ def solution(cards):
 
 
 n, m = map(int, input().split())
-
 cards = [list(map(int, input().split())) for _ in range(0, n)]
-
 
 print(solution(cards))

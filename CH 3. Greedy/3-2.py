@@ -22,7 +22,6 @@ def solution(numbers, m, k):
 
 
 n, m, k = map(int, input().split())
-
 numbers = list(map(int, input().split()))
 
 print(solution(numbers, m, k))

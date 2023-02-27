@@ -22,5 +22,4 @@ def solution(n, k):
 
 n, k = map(int, input().split())
 
-
 print(solution(n, k))

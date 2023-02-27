@@ -1,9 +1,6 @@
 # Q02. 곱하기 혹은 더하기
 
 
-strings = str(input())
-
-
 def solution(strings):
     numbers = list(map(int, list(strings)))
 
@@ -22,5 +19,7 @@ def solution(strings):
 
     return answer
 
+
+strings = str(input())
 
 print(solution(strings))

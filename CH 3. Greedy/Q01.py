@@ -1,10 +1,6 @@
 # Q01. 모험가 길드
 
 
-number = int(input())
-fear = list(map(int, input().split()))
-
-
 def solution(fear):
     fear.sort()
 
@@ -21,5 +17,8 @@ def solution(fear):
 
     return count
 
+
+number = int(input())
+fear = list(map(int, input().split()))
 
 print(solution(fear))
