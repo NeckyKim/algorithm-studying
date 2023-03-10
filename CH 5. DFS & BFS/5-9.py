@@ -17,10 +17,10 @@ graph = [
     [1, 7]
 ]
 
-# 1번 노드에서 시작
+# 시작 노드
 start = 1
 
-# 방문한 노드 초기화
+# 노드 방문 여부
 visited = [False] * len(graph)
 
 
