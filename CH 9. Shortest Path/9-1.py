@@ -3,6 +3,8 @@
 
 import sys
 input = sys.stdin.readline
+
+
 INF = int(1e9)  # 무한을 의미하는 값
 
 
@@ -72,7 +74,6 @@ def dijkstra(start):
 dijkstra(start)
 
 
-# 모든 노드로 가기 위한 최단 거리 출력
 for i in range(1, n + 1):
     # 도달할 수 없는 경우
     if distance[i] == INF:
