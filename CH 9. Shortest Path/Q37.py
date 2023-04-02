@@ -1,4 +1,4 @@
-# 9-3. 플로이드 워셜 알고리즘
+# Q37. 플로이드
 # [백준] https://www.acmicpc.net/problem/11404
 
 
@@ -28,7 +28,6 @@ for _ in range(0, m):
     
 
 # 플로이드 워셜 알고리즘 수행
-# [Key Point] i -> j의 거리와, i -> k -> j의 거리를 비교
 for k in range(0, n):
     for i in range(0, n):
         for j in range(0, n):

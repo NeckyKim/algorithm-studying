@@ -5,7 +5,8 @@ import sys
 input = sys.stdin.readline
 
 
-INF = int(1e9)  # 무한을 의미하는 값
+# 무한을 의미하는 값
+INF = int(1e9)
 
 
 # 노드의 개수와 간선의 개수
@@ -46,24 +47,24 @@ def getSmallestNode():
     return index
 
 
-def dijkstra(start):
+def dijkstra(vertex):
     # 시작 노드에 대해서 노드 방문 여부와 최단 거리 테이블 초기화
-    visited[start] = True
-    distance[start] = 0
+    visited[vertex] = True
+    distance[vertex] = 0
 
 
-    for i in graph[start]:
+    for i in graph[vertex]:
         distance[i[0]] = i[1]
 
     # 시작 노드를 제외한 전체 n - 1개의 노드에 대해 반복
     for _ in range(0, n - 1):
         # 현재 최단 거리가 가장 짧은 노드를 꺼내서 방문 처리
-        now = getSmallestNode()
-        visited[now] = True
+        min_vertex = getSmallestNode()
+        visited[min_vertex] = True
 
         #  현재 노드와 연결된 다른 노드를 확인
-        for i in graph[now]:
-            cost = distance[now] + i[1]
+        for i in graph[min_vertex]:
+            cost = distance[min_vertex] + i[1]
 
             # 현재 노드를 거쳐서 다른 노드로 이동하는 거리가 더 짧은 경우
             if cost < distance[i[0]]:
