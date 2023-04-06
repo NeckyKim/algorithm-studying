@@ -11,8 +11,7 @@ def find(x):
         return x
 
     # 루트 노드가 아니면, 루트 노드를 찾을 때 까지 재귀적으로 호출
-    parent[x] = find(parent[x])
-    return parent[x]
+    return find(parent[x])
 
 
 # 두 원소가 속한 집합을 합치기
